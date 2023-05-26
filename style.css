@@ -1,0 +1,70 @@
+@import "./variables.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form#my-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-wrapper {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    min-width: 125px;
+}
+
+input {
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: var(--input-bg-color);
+    border-color: rgb(187, 187, 187);
+    border-radius: 10px;
+}
+
+input:invalid {
+    border: 1px solid var(--invalid-input-border-color);
+    /* border-color: var(--invalid-input-border-color); */
+    background-color: var(--invalid-input-bg-color);
+}
+
+input:valid {
+    border: 1px solid var(--valid-input-border-color);
+    /* border-color: var(--valid-input-border-color); */
+    background-color: var(--valid-input-bg-color);
+}
+/* experimental - non ancora supportata */
+/* input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: green;
+} */
+
+.message {
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.invalid-message {
+    color: var(--invalid-message-text-color);
+    border-color:var(--invalid-message-border-color);
+    background-color: var(--invalid-message-bg-color);
+}
+
+.valid-message {
+    color: var(--valid-message-text-color);
+    border-color:var(--valid-message-border-color);
+    background-color: var(--valid-message-bg-color);
+}

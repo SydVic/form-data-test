@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FORM -->
+    <!-- <form id="my-form" onsubmit="checkElementsValidity()"> -->
+    <form id="my-form">
+        <!-- NAME FIELD -->
+        <div class="input-wrapper">
+            <!-- <label for="name">Nome</label> -->
+            <input
+            id="name" 
+            name="name" 
+            placeholder="Nome *"
+            type="text" 
+            minlength="2" 
+            maxlength="20" 
+            required/>
+        </div>
+        <!-- /NAME FIELD -->
+
+        <!-- LASTNAME FIELD -->
+        <div class="input-wrapper">
+            <!-- <label for="lastname">Cognome</label> -->
+            <input
+            id="lastname" 
+            name="lastname" 
+            placeholder="Cognome *"
+            type="text" 
+            minlength="2" 
+            maxlength="20" 
+            required/>
+        </div>
+        <!-- /LASTNAME FIELD -->
+
+        <!-- EMAIL FIELD -->
+        <div class="input-wrapper">
+            <!-- <label for="email">Email</label> -->
+            <input
+            id="email" 
+            name="email"
+            placeholder="Email *"
+            type="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+            required/>
+        </div>
+        <!-- /EMAIL FIELD -->
+
+        <!-- PHONE FIELD -->
+        <div class="input-wrapper">
+            <!-- <label for="phone">Telefono</label> -->
+            <input
+            id="phone"
+            name="phone"
+            placeholder="Telefono"
+            type="tel"/>
+        </div>
+        <!-- /PHONE FIELD -->
+
+        <!-- PASSWORD FIELD -->
+        <div class="input-wrapper">
+            <!-- <label for="password">Password</label> -->
+            <input
+            id="password"
+            name="password"
+            placeholder="Password *"
+            type="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            required>
+        </div>
+        <!-- /PASSWORD FIELD -->
+
+        <!-- empty div for odd inputs fields and d-flex justify-content: center -->
+        <div class="input-wrapper">
+
+        </div>
+
+    </form>
+    <!-- /FORM -->
+    <!-- <button id="submit" onclick="checkInputsValidity(formElementsArray)">Submit</button> -->
+    <button id="submit" onclick="handleFormSubmission()">Submit</button>
+
+    <ul id="form-output">
+
+    </ul>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+:root {
+    /* global color for valid / invalid */
+    --base-color: rgba(128, 128, 128, 0.3);
+    --invalid-color: #ff0000;
+    --invalid-rgba-color: rgba(255, 0, 0, 0.1);
+    --valid-color: #008000;
+    --valid-rgba-color: rgba(0, 128, 0, 0.1);
+
+    /* variables for form inputs */
+    --input-bg-color: var(--base-color);
+    --invalid-input-border-color: var(--invalid-color);
+    --invalid-input-bg-color: var(--invalid-rgba-color);
+    --valid-input-border-color: var(--valid-color);
+    --valid-input-bg-color: var(--valid-rgba-color);
+
+    /* variables for form input messages */
+    --invalid-message-text-color: var(--invalid-color);
+    --invalid-message-border-color: var(--invalid-color);
+    --invalid-message-bg-color: var(--invalid-rgba-color);
+
+    --valid-message-text-color: var(--valid-color);
+    --valid-message-border-color: var(--valid-color);
+    --valid-message-bg-color: var(--valid-rgba-color);
+}
